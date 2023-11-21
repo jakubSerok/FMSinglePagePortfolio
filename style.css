@@ -1,0 +1,95 @@
+@import url("./assets/fonts/SpaceGrotesk-VariableFont_wght.ttf");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #151515;
+    font-family: "Space Grotesk" sans-serif;
+}
+nav{
+    align-items: center;
+}
+.navBar{
+    display: flex;
+    justify-content: space-between;   
+}
+.navBar h1{
+    position: absolute;
+    top: 30px;
+    left: 165px;
+    color: white;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2rem; /* 100% */
+    letter-spacing: -0.02775rem;
+}
+.nav-icons{
+    position: absolute;
+    top: 43px;
+    right: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12.03075rem;
+    height: 1.5625rem;
+    gap: 1rem;
+}
+.rings{
+    position: absolute;
+    top:133px;
+    left: -100px;
+
+}
+.grupText{
+    position: absolute;
+    top: 198px;
+    left: 165px;
+    display: flex;
+    flex-direction: column;
+    width: 706px;
+    height: 303px;
+    flex-shrink: 0;
+    color: white;
+    gap: 2rem;
+}
+.grupText h1{    
+    color: var(--White, #FFF);
+font-feature-settings: 'clig' off, 'liga' off;
+
+/* Heading (XL) */
+font-family: Space Grotesk;
+font-size: 88px;
+font-style: normal;
+font-weight: 700;
+line-height: 88px; /* 100% */
+letter-spacing: -2.5px;
+}
+.grupText p{
+    width: 445px;
+    font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 28px; /* 155.556% */
+}
+.grupText a{
+    color: var(--White, #FFF);
+font-family: Space Grotesk;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 26px; /* 162.5% */
+letter-spacing: 2.286px;
+text-decoration: none;
+}
+.profile{
+    position: absolute;
+    right: 165px;
+    top: 0px;
+    width: 445px;
+    height: 720px;
+    flex-shrink: 0;
+    z-index: -1;
+}
