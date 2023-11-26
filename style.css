@@ -4,6 +4,8 @@
     margin: 0; 
     padding: 0;
     box-sizing: border-box;
+    overflow-x: clip;
+    
 }
 
 body {
@@ -55,6 +57,7 @@ body {
     font-style: normal;
     font-weight: 500;
     line-height: 28px;
+    color: #D9D9D9;
 }
 .contact a{
     text-decoration: none;
@@ -67,6 +70,10 @@ body {
 }
 .contact a:hover{    
     color: #4EE1A0;
+}
+.buttons{
+    display: none;
+    gap: 2rem;
 }
 .rectangle{
     width: 120px;
@@ -188,10 +195,6 @@ footer{
 .textfooter h1{
     font-size: 88px;
 }
-.leftSide img{
-    position: absolute;
-    left: -205px;
-}
 .footerLinks{
     padding-top: 30px;
     display: flex;
@@ -283,4 +286,149 @@ footer{
 }
 .grrenText{    
     text-decoration: 5px solid underline #4EE1A0;
+}
+.nav-icons a:hover img{    
+    filter: brightness(0) saturate(100%) invert(79%) sepia(18%) saturate(1156%) hue-rotate(98deg) brightness(91%) contrast(102%);
+}
+@media (max-width:768px){   
+    .navBar{
+        width: 100vw;       
+        margin-right: 0px;
+        margin-left: 0px; 
+    }
+    .buttons{
+        display: flex;
+        gap: 2rem;
+    }
+    .imgBox img{
+        position: absolute;
+        top: 0;
+        right: 0px;
+        width: 322px;
+        height: 600px;
+        z-index: -1;
+    }
+    .textBox{
+        display: flex;
+        flex-direction: column;   
+        width: 445px;
+        height: 449px;   
+        margin-left:  32px; 
+        margin-top: 130px;
+        gap: 2rem;
+    }
+    .textBox h1{
+        font-size: 72px;
+    }
+    .expGrid{    
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1ft;
+        gap: 10px;  
+        
+        row-gap: 30px;  
+        width: 90%;
+        border-top:  1px solid #979797;
+       
+    }
+    .imgContainer, .imgContainer img{
+        width: 342px;
+        height: 253px;    
+    }
+    .projectContainer{
+        width: 100vw;
+    }
+    .projectGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;        
+        padding: 10px;
+        width: 100%;     
+        row-gap: 50px;
+        padding-bottom: 150px;
+    }
+    
+    .projectText h1{
+        font-size: 72px;
+    }
+    .footerCointainer{
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        height: 80%;
+        margin-bottom: 20px;
+    }
+    .leftSide img{
+        position: absolute;
+        left: -205px;      
+    }
+}
+@media (max-width:375px){  
+    .navBar{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .adam-container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 400px;
+        text-align: center;
+    }
+    .textBox{
+        align-items: center;
+        margin-left: 0px;
+    }
+    .textBox h1{
+        font-size: 40px;
+    }
+    .textBox p{
+        font-size: 16px;
+        width: 90vw;
+    }
+    .expGrid{    
+        padding-top: 0px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        row-gap: 30px;     
+        text-align: center;       
+        width: 90%;
+        border-top:  1px solid #979797;
+        border-bottom:  1px solid #979797;
+    }
+    .projectText{
+        width: 90%;
+    }
+    .projectText h1{
+        font-size: 40px;
+    }
+    .projectGrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        row-gap: 50px;     
+               
+        width: 90%;
+    }
+    .buttons{
+        display: flex;
+        gap: 2rem;
+    }
+    footer{
+        width: 100vw;
+    }
+    .textfooter{
+        width: 300px;
+        text-align: center;
+    }
+    .textfooter h1{
+        font-size: 40px;
+    }
+    .textfooter p{
+        font-size: 16px;
+    }.rightSide{
+        width: 100%;
+    }
+    
 }
